@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Translate Site",
+  "version": "1.0",
+  "description": "Quickly translate the current website using Google Translate",
+  "permissions": [
+    "contextMenus",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Translate Site"
+  },
+  "default_locale": "en"
+}

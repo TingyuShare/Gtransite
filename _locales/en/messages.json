@@ -1,0 +1,22 @@
+{
+  "extension_name": {
+    "message": "Translate Site",
+    "description": "Extension name"
+  },
+  "extension_description": {
+    "message": "Quickly translate the current website using Google Translate",
+    "description": "Extension description"
+  },
+  "menu_item": {
+    "message": "Translate this page",
+    "description": "Context menu item"
+  },
+  "popup_title": {
+    "message": "Translate Site",
+    "description": "Popup title"
+  },
+  "translate_button": {
+    "message": "Translate",
+    "description": "Translate button text"
+  }
+}
