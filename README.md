@@ -24,64 +24,48 @@ A Chrome extension to quickly translate the current website using Google Transla
 
 ## Chrome Web Store Submission Guide
 
-### Step 1: Prepare Assets
+### Icons
 
-Before submitting, you need to create icon files in `images/` folder:
+Store accepts SVG icons directly. Current icon: `images/icon.svg`
 
-| Icon | Required Size | Where Displayed |
-|------|--------------|-----------------|
-| `icon16.png` | 16x16px (PNG) | Toolbar |
-| `icon32.png` | 32x32px (PNG) | Toolbar @2x |
-| `icon48.png` | 48x48px (PNG) | Extension manager |
-| `icon128.png` | 128x128px (PNG) | Store listing, installer |
+If you want custom PNG icons instead, generate:
 
-**Note**: Also prepare `promo-icon.png` (128x128px) - used for promotional images.
+| Icon | Size |
+|------|------|
+| `icon16.png` | 16x16px |
+| `icon32.png` | 32x32px |
+| `icon48.png` | 48x48px |
+| `icon128.png` | 128x128px |
 
-### Step 2: Create Screenshots (Recommended)
+Use [SVG to PNG converter](https://redketchup.io/vector-to-png) to generate PNGs from SVG.
 
-- 1-5 screenshots at 1280x800px or 640x400px
-- Show the extension in action
-- Name: `screenshot1.png`, `screenshot2.png`, etc.
+### Screenshots (Recommended)
 
-### Step 3: Upload
+Create 1-5 screenshots at 1280x800px or 640x400px:
+
+- Show language selection popup
+- Show translated page result
+
+### Upload
 
 1. Go to [Chrome Developer Dashboard](https://developer.chrome.com/docs/webstore/)
 2. Click "Add new item"
-3. Upload a ZIP file containing:
-   - manifest.json
-   - background.js
-   - popup.html
-   - popup.js
-   - _locales/en/messages.json
-   - images/* (all icons)
+3. Upload a ZIP file containing all extension files
 4. Fill in store listing details
 
-### Store Listing Tips
+### Store Listing
 
-**Title**: Translate Site (max 45 chars)
+**Title**: Translate Site
 
 **Short description** (max 132 chars):
 > Instantly translate any website using Google Translate with one click or right-click.
 
 **Detailed description**:
-> Translate Site is a simpleChrome extension that brings Google Translate to your browser. Easily translate entire websites with a single click or right-click menu.
-
-**Key features**:
-- One-click translation via toolbar
-- Right-click context menu
-- 12+ language options
-- Remembers your preferred language
-
-**Category**: Productivity
+> Translate Site is a simple Chrome extension that brings Google Translate to your browser. Easily translate entire websites with a single click or right-click menu.
 
 ### Privacy Practice
 
-Since this extension:
-- Only translates the URL you explicitly request
-- Does not read page content
-- Does not collect any data
-
-You can select "Yes, the extension uses least sensitive permissions available" in the privacy practice questionnaire.
+This extension only redirects URLs to Google Translate service. It does not read page content or collect any data.
 
 ## License
 
