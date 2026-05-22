@@ -4,10 +4,10 @@
   "version": "1.0",
   "description": "Quickly translate the current website using Google Translate",
   "icons": {
-    "16": "images/icon.svg",
-    "32": "images/icon.svg",
-    "48": "images/icon.svg",
-    "128": "images/icon.svg"
+    "16": "icon.svg",
+    "32": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
   },
   "permissions": [
     "contextMenus",
@@ -18,7 +18,11 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Translate Site"
+    "default_title": "Translate Site",
+    "default_icon": {
+      "16": "icon.svg",
+      "32": "icon.svg"
+    }
   },
   "default_locale": "en",
   "short_name": "TransSite"
